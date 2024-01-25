@@ -155,11 +155,6 @@ export default function Index() {
                 <br />
                 <br />
             </div>
-
-
-            <Form method="post" className="hidden">
-                <button type="submit" name="_action" value="create">Create Paints</button>
-            </Form>
         </div>
     );
 }
