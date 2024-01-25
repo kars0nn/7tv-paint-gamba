@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Blacks Ops One";
+    src: url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+}
+
+html::-webkit-scrollbar {
+    width: 6px;
+    z-index: 5;
+}
+
+html::-webkit-scrollbar-track {
+    background: rgba(225, 54, 255, 0);
+    z-index: 4;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(77, 77, 77);
+    width: 3px;
+    border-radius: 8px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 85, 85);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+    background: rgb(104, 104, 104);
+    border-radius: 10px;
+}

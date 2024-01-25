@@ -1,0 +1,23 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = env("DATABASE_URL")
+}
+
+model Paint {
+    id         String  @id @unique @default(uuid())
+    name       String
+    gradient   String
+    glow       String?
+    bgClip     String  @default("text")
+    tfcolor    String  @default("transparent")
+    float      String
+    level      String
+    colorCount Int
+}
