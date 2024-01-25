@@ -5,7 +5,7 @@ import { Paint } from "../components/paint-comp";
 import { RouteErrorComponent } from "../components/route-error";
 
 export const meta = () => {
-    return [{ title: '7tv gamba' }, { name: 'description', content: 'gambaaa' }, { name: 'theme-color', content: '#27272c' }];
+    return [{ title: '7tv gamba' }, { name: 'description', content: 'open packs for 7tv paints', 'og:image': `https://gamba.karson.lol/favicon.ico`, viewport: "width=device-width,initial-scale=1,user-scalable=no" }, { name: 'theme-color', content: '#27272c' }];
 };
 
 export let loader = async () => {
