@@ -82,7 +82,7 @@ export default function Index() {
                             <br />
                             <br />
                             <p className="font-mono font-bold">
-                                3 Common Paints
+                                1 Common Paint
                             </p>
                             <small>t$100</small>
                         </button>
@@ -93,7 +93,7 @@ export default function Index() {
                             <br />
                             <br />
                             <p className="font-mono font-bold">
-                                1-4 Rare OR Epic
+                                1-3 Rare OR Epic
                             </p>
                             <small>t$200</small>
                         </button>
@@ -104,7 +104,7 @@ export default function Index() {
                             <br />
                             <br />
                             <p className="font-mono font-bold">
-                                Guaranteed Epics 1-5
+                                Guaranteed 3 Epics
                                 <br />
                                 Increased chance of Legendary
                             </p>

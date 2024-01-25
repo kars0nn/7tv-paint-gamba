@@ -170,7 +170,7 @@ export async function openPack(type) {
     switch (type) {
         case 'MASTER':
             {
-                let pickLegend = Math.random() < 0.009 ? true : false;
+                let pickLegend = Math.random() < 0.09 ? true : false;
                 if (pickLegend) {
                     const itemCount = await db.paint.count({ where: { level: "Factory New" } });
                     const skip = Math.max(0, Math.floor(Math.random() * itemCount));
@@ -189,7 +189,7 @@ export async function openPack(type) {
                         where: {
                             level: "Field-Tested"
                         },
-                        take: Math.max(3, Math.floor(Math.random() * 5)),
+                        take: 3,
                         skip: skip
                     })
                     return paints
@@ -209,7 +209,7 @@ export async function openPack(type) {
                     where: {
                         level: "Field-Tested"
                     },
-                    take: Math.max(1, Math.floor(Math.random() * 4)),
+                    take: Math.max(1, Math.floor(Math.random() * 3)),
                     skip: skip
                 })
 
@@ -243,7 +243,7 @@ export async function openPack(type) {
                             },
                         ],
                     },
-                    take: 3,
+                    take: 1,
                     skip: skip
                 })
 
@@ -276,7 +276,7 @@ export async function openPack(type) {
                         },
                     ],
                 },
-                take: 3,
+                take: 1,
                 skip: skip
             })
 
